@@ -21,7 +21,7 @@ npm install inqurier
 
 
           
-## Useage
+## Usage
 ### This will be used for some who is looking for a quick and easy way to make professional README's
           
 ## Licences
