@@ -12,26 +12,50 @@ const questions = () => {
             type: "input",
             name: "title",
             message: "What is the project title?",
+            validate: titleInput => {
+                if (titleInput) {
+                  return true;
+                } else {
+                  console.log('Please enter the project title!');
+                  return false;
+                }
+              }
         },
         {
             type: "input",
             name: "description",
-            message: "Please describe the project"
+            message: "Please describe the project:",
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                  return true;
+                } else {
+                  console.log('Please enter a project description!');
+                  return false;
+                }
+              }
         },
         {
             type: "input",
             name: "install",
-            message: "If there is a installation process please desrcibe it",
+            message: "If there is a installation process please write it out in code:",
         },
         {
             type: "input",
-            name: "usage",
-            message: "What will this project be used for?"
+            name: "useage",
+            message: "What will this project be used for?",
+            validate: useageInput => {
+                if (useageInput) {
+                  return true;
+                } else {
+                  console.log('Please enter a project useage!');
+                  return false;
+                }
+              }
         },
         {
             type: "list",
             name: "license",
-            message: "What licenses will go along with this project",
+            message: "What licenses will go along with this project:",
             choices: [
                 "Apache",
                 "Academic",
@@ -50,69 +74,52 @@ const questions = () => {
         {
             type: "input",
             name: "tests",
-            message: "If there are tests needed done for this project please describe them"
-        },
-        {
-            type: "input",
-            name: "issues",
-            message: "What do I do if I have an issue? "
+            message: "If there are tests needed done for this project please describe them:"
         },
         {
             type: "input",
             name: "username",
-            message: "Enter your GitHub username: "
+            message: "Enter your GitHub username: ",
+            validate: usernameInput => {
+                if (usernameInput) {
+                  return true;
+                } else {
+                  console.log('Please enter a Github username!');
+                  return false;
+                }
+              }
         },
         {
             type: "input",
             name: "email",
-            message: "Enter your email please"
+            message: "Enter your email please:",
+            validate: emailInput => {
+                if (emailInput) {
+                  return true;
+                } else {
+                  console.log('Please enter a valid email!');
+                  return false;
+                }
+              }
         }
     ]);
 } 
-
-// // function to write README file
-// function writeToFile(fileName, data) {
-//     const generateMarkdownResults = generateMarkdown(data)
-// }
-
-// const writeToFile = fileContent => {
-
-//     const generateMarkdownResults = generateMarkdown(data) 
-
-//     return new Promise((resolve, reject) => {
-//       fs.writeFile('./dist/README.md', data, err => {
-//         // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
-//         if (err) {
-//           reject(err);
-//           // return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well
-//           return;
-//         }
-  
-//         // if everything went well, resolve the Promise and send the successful data to the `.then()` method
-//         resolve({
-//           ok: true,
-//           message: 'File created!'
-//         });
-//       });
-//     });
-//   };
-
-
 
 // function to initialize program
 const init = () => {
     console.log(`
 =================
-Create your professional README
+Create a README!!!
 =================
 `);
 questions()
     .then(data => {
         fs.writeFile('./dist/README.md', generateMarkdown(data), err => {
             if (err) throw err;
-            console.log('README created! Check out README.md in dist directory to see it!')
+            console.log('Your README has been created in the "dist" folder')
         });
     })
 }
+
 // function call to initialize program
 init();
