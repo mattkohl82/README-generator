@@ -37,3 +37,14 @@ This project is licenced under Mozilla
 ## Questions
 ### [Mattkohl82 for GitHub](https://github.com/Mattkohl82)  
 ### mattkohl82@gmail.com for ✉️ email
+
+
+## The above README was created using this README generator
+
+### Below is a link to a video of me demostrating the application  
+[Click Here Please](https://github.com/mattkohl82/README-generator/blob/master/src/videopreview.webm)
+
+### Belowe are two screen shots of the code  
+
+![index.js](./src/screenshot1.jpg) 
+![generateMarkdown.js](./src/screenshot1.jpg)
