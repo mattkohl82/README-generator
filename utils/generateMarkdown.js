@@ -24,7 +24,7 @@ ${ data.install }
 
 
           
-## Useage
+## Usage
 ### ${ data.usage }
           
 ## Licences
