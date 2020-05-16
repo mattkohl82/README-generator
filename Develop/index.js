@@ -1,14 +1,20 @@
+const generateMarkdown = require('./utils/generateMarkdown')
+
+
+
 // array of questions for user
 const questions = [
 
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+const writeToFile = (fileName, data) => {
+
+    const generateMarkdownResults = generateMarkdown(data)
 }
 
 // function to initialize program
-function init() {
+const init = () => {
 
 }
 
