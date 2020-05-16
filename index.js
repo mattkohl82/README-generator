@@ -41,10 +41,10 @@ const questions = () => {
         },
         {
             type: "input",
-            name: "useage",
+            name: "usage",
             message: "What will this project be used for?",
-            validate: useageInput => {
-                if (useageInput) {
+            validate: usageInput => {
+                if (usageInput) {
                   return true;
                 } else {
                   console.log('Please enter a project useage!');
@@ -54,8 +54,8 @@ const questions = () => {
         },
         {
             type: "list",
-            name: "license",
-            message: "What licenses will go along with this project:",
+            name: "licences",
+            message: "What licences will go along with this project:",
             choices: [
                 "Apache",
                 "Academic",

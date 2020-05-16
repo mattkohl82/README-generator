@@ -1,19 +1,19 @@
 
-  # Taskinator
+  # README Generator
 
   ![badge](https://img.shields.io/badge/License-Mozilla-blue.svg)
 
   ## Table of Contents
 - [Description](#description)
 - [Installation](#install)
-- [Usage](#useage)
-- [License](#lincenses)
+- [Usage](#usage)
+- [Licences](#licences)
 - [Contribution](#contribution)
 - [Tests](#tests)
 - [Questions](#questions)
 
 ## Description
-### helps create tasks
+### This node.js application will help you create a professional README for your projects.
 
 ## Install
 ```
@@ -23,19 +23,19 @@ npm install inqurier
 
           
 ## Useage
-### to help sort and organize tasks
+### This will be used for some who is looking for a quick and easy way to make professional README's
           
-## Lincenses
+## Licences
 ![badge](https://img.shields.io/badge/License-Mozilla-blue.svg)  
-This project is licensed under Mozilla
+This project is licenced under Mozilla
         
 ## Contribution
-### clone and fix bugs in code
+### You can help by cloning and adding some flair to the README being generated.
           
 ## Tests
-### TBD
+### Not at this time.
 
 ## Questions
-### [mattkohl82 for GitHub](https://github.com/mattkohl82)  
-### mattkohl82@gmail.com for email
+### [Mattkohl82 for GitHub](https://github.com/Mattkohl82)  
+### mattkohl82@gmail.com for ✉️ email
 
