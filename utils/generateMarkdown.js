@@ -34,7 +34,7 @@ This project is licenced under ${ data.licences }
 ## Contribution
 ### ${ data.contributing }
           
-## Tests
+##  Tests 🔨
 ### ${ data.tests }
 
 ## Questions
