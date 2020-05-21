@@ -45,7 +45,11 @@ This project is licenced under Mozilla
 [README Generator Repo](https://github.com/mattkohl82/README-generator)  
 
 ### Below is a link to a video of me demostrating the application  
-[Click Here Please](https://github.com/mattkohl82/README-generator/blob/master/src/videopreview.webm)
+[Click Here Please](https://github.com/mattkohl82/README-generator/blob/master/src/videopreview.webm)  
+[Youtube version](https://youtu.be/sA2iutzGDfE)
+
+
+
 
 ### Belowe are two screen shots of the code  
 
